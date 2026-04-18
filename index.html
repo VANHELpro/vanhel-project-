@@ -1,57 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>VANHEL CREATIVE | Arrafi Zhafran</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
-    <div class="nav-links">
-    <a href="index.html">HOME</a>
-    <a href="kimsanktransbyvan.html">KIMSANK TRANS</a>
-    <a href="web pantest new update.html">OVT SYSTEM</a>
-    </div>
-  <body>
-    <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="VANHEL NEXUS | Arrafi Zhafran">
-<meta property="og:description" content="Cybersecurity Lab & High-Tech Transportation Branding">
-<meta property="og:image" content="https://vanhelpro.github.io/vanhel-project-/assets/thumb.jpg">
     
-  <div id="security-monitor" style="position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,0.8); border: 1px solid #00f7ff; color: #00f7ff; padding: 10px; font-family: 'Orbitron', sans-serif; font-size: 10px; z-index: 9999; border-radius: 5px;">
-    <div style="display: flex; align-items: center; gap: 8px;">
-        <div id="status-light" style="width: 8px; height: 8px; background: #00f7ff; border-radius: 50%; box-shadow: 0 0 10px #00f7ff; animation: blink 1s infinite;"></div>
-        <span>SENTINEL PROTOCOL: ACTIVE</span>
-    </div>
-    <div id="threat-level" style="margin-top: 5px;">THREAT LEVEL: LOW</div>
-    <div id="ddos-status" style="color: #ffb800;">AUTO-SCAN: ENABLED</div>
-</div>
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="VANHEL NEXUS | Arrafi Zhafran">
+    <meta property="og:description" content="Cybersecurity Lab & High-Tech Transportation Branding">
+    <meta property="og:image" content="https://vanhelpro.github.io/vanhel-project-/assets/thumb.jpg">
 
-<style>
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.3; }
-    100% { opacity: 1; }
-}
-</style>
-
-  </body>
-  
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* ================= RESPONSIVE ADAPTATION ================= */
-        @media screen and (max-width: 600px) {
-            .hero-title { font-size: 35px !important; }
-            .grid-container { grid-template-columns: 1fr !important; }
-            nav { padding: 15px !important; }
-            .mobile-hide { display: none; }
-        }
-
         /* ================= CORE STYLING ================= */
         html { scroll-behavior: smooth; }
         body {
-            margin: 0;
-            background: #050505;
-            color: #fff;
-            font-family: 'Rajdhani', sans-serif;
-            overflow-x: hidden;
+            margin: 0; background: #050505; color: #fff;
+            font-family: 'Rajdhani', sans-serif; overflow-x: hidden;
             -webkit-tap-highlight-color: transparent;
         }
 
@@ -59,50 +26,41 @@
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-thumb { background: linear-gradient(#00f7ff, #12e1b9); border-radius: 10px; }
 
-        /* ================= VISUAL EFFECTS ================= */
         canvas { position: fixed; top: 0; left: 0; z-index: -2; pointer-events: none; }
-        
         .overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.8));
             z-index: -1; pointer-events: none;
         }
 
+        /* ================= UI COMPONENTS ================= */
+        nav {
+            position: fixed; width: 100%; display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 25px; box-sizing: border-box; z-index: 1000;
+            background: rgba(0,0,0,0.7); backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(18, 225, 185, 0.2);
+        }
+
+        .nav-links a {
+            color: #12e1b9; text-decoration: none; margin-left: 10px;
+            font-family: 'Orbitron'; font-size: 9px; letter-spacing: 1px;
+            border: 1px solid rgba(18, 225, 185, 0.3); padding: 5px 8px; transition: 0.3s;
+        }
+        .nav-links a:hover { background: #12e1b9; color: #000; }
+
         .glitch-text {
-            font-family: 'Orbitron', sans-serif;
-            color: #12e1b9;
+            font-family: 'Orbitron', sans-serif; color: #12e1b9;
             text-shadow: 0 0 10px rgba(18, 225, 185, 0.5);
             animation: glitch-anim 2s infinite;
         }
 
-        @keyframes glitch-anim {
-            0%, 100% { transform: none; opacity: 1; }
-            7% { transform: skew(-0.5deg, -0.9deg); opacity: 0.75; }
-            10% { transform: none; opacity: 1; }
-        }
-
-        /* ================= UI COMPONENTS ================= */
-        nav {
-            position: fixed; width: 100%; display: flex; justify-content: space-between;
-            padding: 25px 50px; box-sizing: border-box; z-index: 1000;
-            background: rgba(0,0,0,0.5); backdrop-filter: blur(15px);
-            border-bottom: 1px solid rgba(18, 225, 185, 0.2);
-        }
-
         .vanhel-card {
-            background: rgba(20, 20, 20, 0.6);
-            border: 1px solid rgba(18, 225, 185, 0.3);
-            padding: 40px;
-            position: relative;
+            background: rgba(20, 20, 20, 0.6); border: 1px solid rgba(18, 225, 185, 0.3);
+            padding: 30px; position: relative;
             clip-path: polygon(0 0, 100% 0, 100% 85%, 90% 100%, 0 100%);
-            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: 0.5s;
         }
-
-        .vanhel-card:hover {
-            border-color: #12e1b9;
-            box-shadow: 0 0 30px rgba(18, 225, 185, 0.2);
-            transform: scale(1.02);
-        }
+        .vanhel-card:hover { border-color: #12e1b9; transform: scale(1.02); }
 
         .hud-display {
             position: fixed; padding: 10px; font-family: monospace; font-size: 10px;
@@ -110,92 +68,43 @@
         }
 
         /* ================= LAYOUT ================= */
-        .hero {
-            height: 100vh; display: flex; flex-direction: column;
-            justify-content: center; align-items: center; text-align: center;
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero-title { font-size: clamp(45px, 12vw, 90px); margin: 0; font-family: 'Orbitron', sans-serif; letter-spacing: 12px; }
+        .section { padding: 80px 20px; max-width: 1200px; margin: auto; text-align: center; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 50px; }
+
+        @keyframes glitch-anim {
+            0%, 100% { transform: none; opacity: 1; }
+            7% { transform: skew(-0.5deg, -0.9deg); opacity: 0.75; }
+            10% { transform: none; opacity: 1; }
         }
-
-        .hero-title { font-size: 80px; margin: 0; font-family: 'Orbitron', sans-serif; letter-spacing: 10px; }
-
-        .section { padding: 100px 20px; max-width: 1200px; margin: auto; text-align: center; }
-
-        .grid-container {
-            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px;
-        }
-
-        .btn-creative {
-            margin-top: 40px; padding: 15px 50px;
-            background: transparent; color: #12e1b9;
-            border: 1px solid #12e1b9; font-family: 'Orbitron', sans-serif;
-            text-decoration: none; font-size: 14px; letter-spacing: 3px;
-            transition: 0.3s; cursor: pointer;
-        }
-
-        .btn-creative:hover { background: #12e1b9; color: #000; box-shadow: 0 0 20px #12e1b9; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
     </style>
 </head>
 <body>
 
     <nav>
         <div style="font-family: 'Orbitron';">
-            <span style="color: #12e1b9; font-weight: bold; font-size: 20px;">VANHEL</span>
-            <span style="font-size: 10px; display: block; letter-spacing: 2px; color: rgba(255,255,255,0.5);">CREATIVE STUDIO</span>
+            <span style="color: #12e1b9; font-weight: bold; font-size: 18px;">VANHEL</span>
+            <span style="font-size: 8px; display: block; letter-spacing: 2px; color: rgba(255,255,255,0.5);">CREATIVE STUDIO</span>
         </div>
-        <div class="mobile-hide">
-            <a href="#work" style="color:white; text-decoration:none; margin-left:30px; font-size: 12px; letter-spacing: 2px;">WORK</a>
-            <a href="#vision" style="color:white; text-decoration:none; margin-left:30px; font-size: 12px; letter-spacing: 2px;">VISION</a>
-            <a href="#" style="color:#12e1b9; text-decoration:none; margin-left:30px; font-size: 12px; border: 1px solid #12e1b9; padding: 8px 15px;">HIRE ME</a>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="kimsanktransbyvan.html">TRANS</a>
+            <a href="web pantest new update.html">OVT</a>
         </div>
     </nav>
 
-    <div class="hud-display" style="top: 100px; left: 20px; border-left: 2px solid #12e1b9;">
-        STATUS: ONLINE<br>CORE: VANHEL_GEN_V1<br>AUTHOR: ARRAFI ZHAFRAN
+    <div class="hud-display" style="top: 80px; left: 20px; border-left: 2px solid #12e1b9;">
+        STATUS: ONLINE<br>CORE: VANHEL_GEN_V2<br>AUTHOR: ARRAFI ZHAFRAN
     </div>
 
-    <div id="hud-sensor" class="hud-display" style="bottom: 30px; right: 20px; border-right: 2px solid #12e1b9; text-align: right;">
-        X: 000 | Y: 000<br>SIGNAL: STABLE
-      <div id="threat-monitor" style="position: fixed; top: 100px; right: 20px; width: 250px; background: rgba(0,0,0,0.9); border: 1px solid #ff3e00; color: #ff3e00; padding: 15px; font-family: 'Courier New', monospace; font-size: 11px; z-index: 10000; box-shadow: 0 0 15px rgba(255, 62, 0, 0.5);">
-    <div style="border-bottom: 1px solid #ff3e00; margin-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-        <span>THREAT_LOG</span>
-        <span id="threat-count">00</span>
-    </div>
-    <div id="log-content" style="height: 150px; overflow-y: hidden; line-height: 1.4;">
-        > INITIALIZING SENTINEL...<br>
-        > WAITING FOR UPLINK...
-    </div>
-</div>
-
-<script>
-    const logContent = document.getElementById('log-content');
-    const threatCount = document.getElementById('threat-count');
-    let threats = 0;
-
-    // Fungsi untuk menambah log serangan (Bisa dipicu saat ada aktivitas mencurigakan)
-    function addThreatLog(ip, type) {
-        threats++;
-        threatCount.innerText = threats.toString().padStart(2, '0');
-        const entry = document.createElement('div');
-        entry.style.color = "#fff";
-        entry.innerHTML = `> [!] ${type}<br>  SRC: ${ip}`;
-        
-        // Animasi merah saat ada serangan
-        document.getElementById('threat-monitor').style.boxShadow = "0 0 30px #ff3e00";
-        setTimeout(() => { document.getElementById('threat-monitor').style.boxShadow = "0 0 15px rgba(255, 62, 0, 0.5)"; }, 500);
-
-        logContent.prepend(entry);
-        if (logContent.childNodes.length > 8) logContent.lastChild.remove();
-    }
-
-    // Simulasi Deteksi (Hanya contoh, nanti bisa disambung ke backend)
-    setInterval(() => {
-        if(Math.random() > 0.85) {
-            const fakeIP = `192.168.${Math.floor(Math.random()*255)}.${Math.floor(Math.random()*255)}`;
-            const types = ["DORK_SCAN", "DDOS_ATTACK", "VULN_PROBING", "BRUTE_FORCE"];
-            addThreatLog(fakeIP, types[Math.floor(Math.random()*types.length)]);
-        }
-    }, 10000);
-          </script>
-      
+    <div id="security-monitor" style="position: fixed; bottom: 20px; left: 20px; background: rgba(0,0,0,0.8); border: 1px solid #00f7ff; color: #00f7ff; padding: 10px; font-family: 'Orbitron', sans-serif; font-size: 9px; z-index: 9999; border-radius: 5px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <div style="width: 8px; height: 8px; background: #00f7ff; border-radius: 50%; box-shadow: 0 0 10px #00f7ff; animation: blink 1s infinite;"></div>
+            <span>SENTINEL: ACTIVE</span>
+        </div>
+        <div style="margin-top: 5px; color: #ffb800; font-size: 8px;">AUTO-SCANNING NETWORK...</div>
     </div>
 
     <canvas id="starfield"></canvas>
@@ -203,41 +112,37 @@
 
     <section class="hero">
         <h1 class="hero-title glitch-text">VANHEL</h1>
-        <p style="letter-spacing: 5px; opacity: 0.7; font-weight: 300;">BEYOND THE CREATIVE LIMITS</p>
-        <a href="#work" class="btn-creative">EXPLORE ARCHIVE</a>
-        <div style="margin-top: 50px; font-size: 10px; color: #12e1b9; opacity: 0.5; letter-spacing: 4px;">KMB TRANS & MAVERICK PROTOCOL INTEGRATED</div>
+        <p style="letter-spacing: 5px; opacity: 0.7; font-weight: 300; font-size: 12px; margin-top: 10px;">BEYOND THE CREATIVE LIMITS</p>
+        <div style="margin-top: 30px; font-size: 9px; color: #12e1b9; opacity: 0.6; letter-spacing: 3px;">KMB TRANS & OVT PROTOCOL INTEGRATED</div>
     </section>
-     <script>
-    // Mencegah web kamu dibuka di dalam Iframe (Anti-Frame)
-    if (window.top !== window.self) {
-        window.top.location = window.self.location;
-    }
-     </script>
-  
-  
+
     <section class="section" id="work">
-        <h2 class="glitch-text" style="font-size: 30px;">CREATIVE PILLARS</h2>
+        <h2 class="glitch-text" style="font-size: 24px;">CREATIVE PILLARS</h2>
         <div class="grid-container">
             <div class="vanhel-card">
-                <h3 style="color: #12e1b9;">BRANDING</h3>
-                <p style="font-size: 14px; opacity: 0.8; line-height: 1.6;">Membangun identitas visual yang tajam dan berkarakter seperti Maverick Gen-X.</p>
+                <h3 style="color: #12e1b9; font-size: 16px;">BRANDING</h3>
+                <p style="font-size: 13px; opacity: 0.7;">Identitas visual tajam seperti Maverick Gen-X.</p>
             </div>
             <div class="vanhel-card">
-                <h3 style="color: #12e1b9;">UI/UX DESIGN</h3>
-                <p style="font-size: 14px; opacity: 0.8; line-height: 1.6;">Antarmuka futuristik dengan navigasi yang intuitif untuk semua perangkat.</p>
+                <h3 style="color: #12e1b9; font-size: 16px;">SECURITY</h3>
+                <p style="font-size: 13px; opacity: 0.7;">Integrasi Sentinel Protocol & OVT System.</p>
             </div>
             <div class="vanhel-card">
-                <h3 style="color: #12e1b9;">DEVELOPMENT</h3>
-                <p style="font-size: 14px; opacity: 0.8; line-height: 1.6;">Eksekusi kode yang presisi untuk mewujudkan ide gila menjadi realitas digital.</p>
+                <h3 style="color: #12e1b9; font-size: 16px;">DEVELOPMENT</h3>
+                <p style="font-size: 13px; opacity: 0.7;">Full-stack deployment via Termux Nexus.</p>
             </div>
         </div>
     </section>
 
-    <footer style="padding: 50px; text-align: center; border-top: 1px solid rgba(18, 225, 185, 0.1);">
-        <p style="font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.3);">
-            &copy; 2026 VANHEL CREATIVE | DESIGNED BY ARRAFI ZHAFRAN | POWERED BY OVT SYSTEM
-        </p>
+    <footer style="padding: 40px; text-align: center; opacity: 0.4; font-size: 9px; letter-spacing: 2px;">
+        &copy; 2026 VANHEL CREATIVE | POWERED BY OVT SYSTEM
     </footer>
+
+    <div id="sentinel-display" style="position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.9); border: 1px solid #12e1b9; color: #12e1b9; padding: 10px; font-family: 'Courier New', monospace; font-size: 9px; z-index: 10000; width: 160px; border-radius: 4px;">
+        <div style="font-weight: bold; text-align: center; border-bottom: 1px solid #12e1b9; margin-bottom: 5px;">SENTINEL v1.0</div>
+        <div id="sentinel-uptime">UPTIME: 00:00:00</div>
+        <div style="color: #fff; font-size: 8px;">ENCRYPTION: AES-256</div>
+    </div>
 
     <script>
         /* ================= STARFIELD ENGINE ================= */
@@ -250,13 +155,9 @@
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
             stars = [];
-            const count = window.innerWidth < 600 ? 70 : 250;
+            const count = window.innerWidth < 600 ? 80 : 200;
             for(let i=0; i<count; i++) {
-                stars.push({
-                    x: Math.random() * canvas.width - canvas.width/2,
-                    y: Math.random() * canvas.height - canvas.height/2,
-                    z: Math.random() * canvas.width
-                });
+                stars.push({ x: Math.random()*canvas.width - canvas.width/2, y: Math.random()*canvas.height - canvas.height/2, z: Math.random()*canvas.width });
             }
         }
 
@@ -276,64 +177,21 @@
             requestAnimationFrame(animate);
         }
 
-        /* ================= INTERACTION ================= */
-        function updateHUD(e) {
-            const x = e.clientX || (e.touches ? e.touches[0].clientX : 0);
-            const y = e.clientY || (e.touches ? e.touches[0].clientY : 0);
-            document.getElementById('hud-sensor').innerHTML = `X: ${Math.round(x)} | Y: ${Math.round(y)}<br>TRACKING: ACTIVE`;
-        }
+        /* ================= UPTIME LOGIC ================= */
+        let seconds = 0;
+        setInterval(() => {
+            seconds++;
+            let hrs = Math.floor(seconds / 3600).toString().padStart(2, '0');
+            let mins = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
+            let secs = (seconds % 60).toString().padStart(2, '0');
+            document.getElementById('sentinel-uptime').innerText = `UPTIME: ${hrs}:${mins}:${secs}`;
+        }, 1000);
 
-        window.addEventListener('mousemove', updateHUD);
-        window.addEventListener('touchmove', updateHUD);
+        // Anti-Iframe
+        if (window.top !== window.self) window.top.location = window.self.location;
+        
         window.addEventListener('resize', init);
-        window.addEventListener('scroll', () => {
-            speed = 15;
-            clearTimeout(window.sTimer);
-            window.sTimer = setTimeout(() => { speed = 1.5; }, 100);
-        });
-
         init(); animate();
     </script>
-  <div id="sentinel-display" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.9); border: 1px solid #ff3e00; color: #ff3e00; padding: 10px; font-family: 'Courier New', monospace; font-size: 10px; z-index: 10000; width: 200px; border-radius: 4px; box-shadow: 0 0 10px #ff3e00;">
-    <div style="font-weight: bold; text-align: center; border-bottom: 1px solid #ff3e00; margin-bottom: 5px;">
-        VANHEL SENTINEL v1.0
-    </div>
-    <div id="sentinel-status">STATUS: MONITORING...</div>
-    <div id="sentinel-threat">THREATS: <span style="color: #fff;">CLEAN</span></div>
-    <div id="sentinel-uptime" style="font-size: 8px; opacity: 0.7;">UPTIME: 00:00:00</div>
-</div>
-
-<script>
-    // Animasi Uptime sederhana di layar web
-    let seconds = 0;
-    setInterval(() => {
-        seconds++;
-        let hrs = Math.floor(seconds / 3600).toString().padStart(2, '0');
-        let mins = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
-        let secs = (seconds % 60).toString().padStart(2, '0');
-        document.getElementById('sentinel-uptime').innerText = `UPTIME: ${hrs}:${mins}:${secs}`;
-    }, 1000);
-</script>
-  <div id="sentinel-display" style="position: fixed; bottom: 10px; right: 10px; background: rgba(0,0,0,0.9); border: 1px solid #ff3e00; color: #ff3e00; padding: 10px; font-family: 'Courier New', monospace; font-size: 10px; z-index: 10000; width: 200px; border-radius: 4px; box-shadow: 0 0 10px #ff3e00;">
-    <div style="font-weight: bold; text-align: center; border-bottom: 1px solid #ff3e00; margin-bottom: 5px;">
-        VANHEL SENTINEL v1.0
-    </div>
-    <div id="sentinel-status">STATUS: MONITORING...</div>
-    <div id="sentinel-threat">THREATS: <span style="color: #fff;">CLEAN</span></div>
-    <div id="sentinel-uptime" style="font-size: 8px; opacity: 0.7;">UPTIME: 00:00:00</div>
-</div>
-
-<script>
-    // Animasi Uptime sederhana di layar web
-    let seconds = 0;
-    setInterval(() => {
-        seconds++;
-        let hrs = Math.floor(seconds / 3600).toString().padStart(2, '0');
-        let mins = Math.floor((seconds % 3600) / 60).toString().padStart(2, '0');
-        let secs = (seconds % 60).toString().padStart(2, '0');
-        document.getElementById('sentinel-uptime').innerText = `UPTIME: ${hrs}:${mins}:${secs}`;
-    }, 1000);
-</script>
-  
 </body>
-  </html>
+</html>
